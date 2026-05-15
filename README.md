@@ -11,6 +11,18 @@ The academic objective is to build an interpretable forecasting workflow using:
 
 The longer-term objective is to keep the work structured enough that it can later evolve into a production-style forecasting system. For the academic phase, the main analysis is kept in notebooks so that data preparation, reasoning, intermediate results, and interpretation are visible.
 
+## Current Progress
+
+The proof-of-concept notebook pipeline has been run end to end for **New Orleans, Louisiana**.
+
+- Extracted **6,215 businesses**, **635,521 reviews**, and **245,421 reviewing users** from the Yelp Open Dataset.
+- Built an active-reviewer friendship graph with **26,598 nodes** and **116,558 edges**.
+- Created user-level network features including degree, PageRank, component size, and community labels.
+- Built a one-month-ahead forecasting dataset for **1,151 active businesses** and **95,533 business-month rows**.
+- Compared persistence baselines, rolling-average baselines, and Random Forest models with historical, business, and SNA features.
+
+Current result: SNA features were successfully engineered and tested, but they do **not yet show a strong or consistent forecasting improvement** beyond recent review history and business metadata. The best COVID-era model is the last-month baseline, while the best pre-COVID model is the historical + business Random Forest.
+
 ## Project Structure
 
 ```text
@@ -62,48 +74,7 @@ notebooks/06_forecasting_models.ipynb
 notebooks/07_results_interpretation.ipynb
 ```
 
-### 01 - Dataset Overview and City Selection
-
-This notebook inspects the business table, counts businesses by city/state, and motivates the decision to focus on one city.
-
-It creates:
-
-```text
-outputs/city_business_counts.csv
-```
-
-### 02 - New Orleans Data Preparation
-
-This notebook extracts a New Orleans subset from the raw Yelp files by streaming through the business, review, and user JSONL files.
-
-It creates:
-
-```text
-data/interim/new_orleans/businesses.jsonl
-data/interim/new_orleans/reviews.jsonl
-data/interim/new_orleans/users.jsonl
-data/interim/new_orleans/summary.json
-```
-
-### 03 - Exploratory Analysis
-
-This notebook begins exploration of the New Orleans subset, including review volume over time, business category distribution, review concentration by business, and user activity concentration.
-
-### 04 - Social Network Analysis
-
-This notebook builds an active-reviewer Yelp friendship graph and creates user-level SNA features such as degree, PageRank, component size, active reviewer flag, and community label where feasible.
-
-### 05 - Time Series Feature Engineering
-
-This notebook creates the one-month-ahead forecasting table. The main cohort uses businesses with at least 100 reviews and at least 36 active review months, excludes January 2022, and models targets from 2015-02 through 2021-12.
-
-### 06 - Forecasting Models
-
-This notebook compares naive baselines, rolling-average baselines, historical-feature ML models, historical-plus-business models, and historical-plus-business-plus-SNA models using chronological train/test splits.
-
-### 07 - Results Interpretation
-
-This notebook consolidates the forecasting metrics and interprets whether SNA features improved prediction beyond historical review patterns and business metadata.
+In order, they cover city selection, New Orleans extraction, exploratory analysis, social network analysis, time-series feature engineering, forecasting models, and final interpretation.
 
 
 ## Main Research Objective
@@ -115,6 +86,19 @@ Research question:
 > Can social interaction patterns between Yelp users help predict future business review activity beyond historical review trends alone?
 
 The final modeling cohort contains **1,151 businesses** and **95,533 business-month rows** after applying the activity threshold and excluding the partial January 2022 month.
+
+## Generated Outputs
+
+Generated data and figures are ignored by Git. The current local run creates:
+
+```text
+data/interim/new_orleans/
+data/processed/new_orleans/
+outputs/city_business_counts.csv
+outputs/forecasting_metrics.csv
+outputs/forecasting_predictions.csv
+outputs/figures/
+```
 
 ## Selected Scope
 
