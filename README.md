@@ -17,6 +17,7 @@ The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
   - next-month review-count regression;
   - attention-pulse classification for unusually high next-month activity.
 - Compared historical, business, SNA, NLP, and all-modality Random Forest models against simple baselines.
+- Added validation-tuned attention-pulse thresholds and top-k pulse retrieval metrics.
 
 Headline finding: raw review-count forecasting is still driven mainly by recent temporal activity, especially during the COVID-era test. Attention pulses better match the community-attention objective, but SNA and NLP add modest incremental predictive signal compared with historical and business features.
 

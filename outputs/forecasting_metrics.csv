@@ -1,17 +1,17 @@
-split,task,model,rows,MAE,RMSE,WAPE
-primary_covid_test,review_count_regression,Baseline: last month,21024,1.6011700913242009,3.0071499652065925,0.6642920572274297
-primary_covid_test,review_count_regression,Baseline: rolling 3-month avg,21024,1.6460711567732116,3.364435850116398,0.682920572274297
-primary_covid_test,review_count_regression,ML: historical,21024,1.7915950193202081,3.432584306947552,0.7432953860125912
-primary_covid_test,review_count_regression,ML: historical + SNA,21024,1.7974206734736038,3.3971388020399345,0.7457123283494632
-primary_covid_test,review_count_regression,ML: historical + NLP,21024,1.7986147874611973,3.4265176833854696,0.7462077413238127
-primary_covid_test,review_count_regression,ML: historical + business,21024,1.8395254418953364,3.513199343621933,0.7631807181136172
-primary_covid_test,review_count_regression,ML: all modalities,21024,1.871548821002487,3.507464029271393,0.7764665498323885
-primary_covid_test,review_count_regression,Baseline: seasonal naive,21024,3.5961282343987824,7.49033814491136,1.4919585594474594
-secondary_pre_covid_test,review_count_regression,ML: historical + business,10511,2.2304123174098254,3.5323467511694493,0.36919470658731773
-secondary_pre_covid_test,review_count_regression,ML: all modalities,10511,2.2380866458795383,3.538540309559203,0.3704650194462965
-secondary_pre_covid_test,review_count_regression,ML: historical + SNA,10511,2.2840857800415777,3.556606482321299,0.3780791438427878
-secondary_pre_covid_test,review_count_regression,ML: historical + NLP,10511,2.297306194644206,3.588944286382654,0.3802674868016575
-secondary_pre_covid_test,review_count_regression,ML: historical,10511,2.298164737729356,3.5876370517365106,0.380409599342886
-secondary_pre_covid_test,review_count_regression,Baseline: rolling 3-month avg,10511,2.3567373862302983,3.743842042395262,0.39010498687664036
-secondary_pre_covid_test,review_count_regression,Baseline: last month,10511,2.702216725335363,4.265552559248914,0.44729133858267717
-secondary_pre_covid_test,review_count_regression,Baseline: seasonal naive,10511,3.4100466178289413,5.686452629434488,0.5644566929133858
+split,task,model,train_period,validation_period,test_period,rows,MAE,RMSE,WAPE
+primary_covid_test,review_count_regression,Baseline: last month,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,1.6011700913242009,3.0071499652065925,0.6642920572274297
+primary_covid_test,review_count_regression,Baseline: rolling 3-month avg,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,1.6460711567732116,3.364435850116398,0.682920572274297
+primary_covid_test,review_count_regression,ML: historical + SNA,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,1.9707047765456038,3.5254107563103196,0.8176042865731579
+primary_covid_test,review_count_regression,ML: historical + NLP,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,1.99690697026215,3.5705273738704917,0.8284750299514838
+primary_covid_test,review_count_regression,ML: historical + business,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,1.9978474458024074,3.636708527580851,0.8288652136270312
+primary_covid_test,review_count_regression,ML: historical,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,2.0045494508966675,3.607005106723259,0.8316457356813328
+primary_covid_test,review_count_regression,ML: all modalities,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,2.0342618892360527,3.608340609205709,0.8439728063009131
+primary_covid_test,review_count_regression,Baseline: seasonal naive,2015-02 to 2018-12,2019-01 to 2019-12,2020-01 to 2021-12,21024,3.5961282343987824,7.49033814491136,1.4919585594474594
+secondary_pre_covid_test,review_count_regression,ML: all modalities,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.3025578698513076,3.9895961613027806,0.3811367837796393
+secondary_pre_covid_test,review_count_regression,ML: historical + business,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.3071954709321396,4.0825035516969885,0.38190443456642076
+secondary_pre_covid_test,review_count_regression,ML: historical + NLP,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.331002297997584,3.9707134471707315,0.38584512053941117
+secondary_pre_covid_test,review_count_regression,ML: historical + SNA,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.34478389704237,4.038973018050845,0.38812635498917086
+secondary_pre_covid_test,review_count_regression,ML: historical,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.349346145599009,4.071373685891163,0.3888815328565541
+secondary_pre_covid_test,review_count_regression,Baseline: rolling 3-month avg,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.3567373862302983,3.743842042395262,0.39010498687664036
+secondary_pre_covid_test,review_count_regression,Baseline: last month,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,2.702216725335363,4.265552559248914,0.44729133858267717
+secondary_pre_covid_test,review_count_regression,Baseline: seasonal naive,2015-02 to 2017-12,2018-01 to 2018-12,2019-01 to 2019-12,10511,3.4100466178289413,5.686452629434488,0.5644566929133858
