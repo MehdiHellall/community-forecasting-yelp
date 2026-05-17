@@ -23,7 +23,6 @@ env/
 
 # Data files
 data/raw/*
-!data/raw/.gitkeep
 !data/raw/yelp/
 data/raw/yelp/*
 !data/raw/yelp/.gitkeep
@@ -31,12 +30,8 @@ data/interim/*
 !data/interim/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
-data/external/*
-!data/external/.gitkeep
 
-# Model artifacts and generated outputs
-models/*
-!models/.gitkeep
+# Generated outputs
 outputs/*
 !outputs/.gitkeep
 
@@ -46,4 +41,3 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
-
