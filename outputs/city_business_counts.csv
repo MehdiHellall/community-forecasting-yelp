@@ -1,0 +1,1433 @@
+city,state,business_count
+Philadelphia,PA,14568
+Tucson,AZ,9251
+Tampa,FL,9049
+Indianapolis,IN,7543
+Nashville,TN,6971
+New Orleans,LA,6208
+Reno,NV,5934
+Edmonton,AB,5054
+Saint Louis,MO,4828
+Santa Barbara,CA,3834
+Boise,ID,2938
+Clearwater,FL,2221
+Saint Petersburg,FL,1663
+Metairie,LA,1644
+Sparks,NV,1624
+Wilmington,DE,1447
+Franklin,TN,1411
+St. Louis,MO,1254
+St. Petersburg,FL,1185
+Meridian,ID,1043
+Brandon,FL,1033
+Largo,FL,1002
+Carmel,IN,967
+Cherry Hill,NJ,959
+West Chester,PA,838
+Goleta,CA,798
+Palm Harbor,FL,665
+Greenwood,IN,649
+Brentwood,TN,645
+New Port Richey,FL,604
+Lutz,FL,591
+Riverview,FL,588
+Kenner,LA,584
+Fishers,IN,570
+Wesley Chapel,FL,561
+King of Prussia,PA,560
+Doylestown,PA,539
+Pinellas Park,FL,512
+Dunedin,FL,491
+Hendersonville,TN,484
+Bensalem,PA,454
+Norristown,PA,448
+Exton,PA,419
+Marlton,NJ,415
+Spring Hill,FL,400
+Tarpon Springs,FL,398
+St Petersburg,FL,387
+Lansdale,PA,379
+Ardmore,PA,376
+Wayne,PA,375
+Media,PA,371
+Phoenixville,PA,365
+Smyrna,TN,365
+Newark,DE,359
+Seminole,FL,359
+St Louis,MO,356
+Gretna,LA,352
+Mount Laurel,NJ,343
+Springfield,PA,330
+Langhorne,PA,327
+Saint Charles,MO,326
+Pottstown,PA,323
+Trenton,NJ,323
+Newtown,PA,322
+Avon,IN,313
+Florissant,MO,313
+Willow Grove,PA,311
+Belleville,IL,303
+Havertown,PA,302
+Conshohocken,PA,301
+Carpinteria,CA,299
+Levittown,PA,298
+Sherwood Park,AB,297
+Malvern,PA,295
+Harvey,LA,289
+Fenton,MO,288
+Eagle,ID,287
+Bryn Mawr,PA,286
+Oldsmar,FL,286
+Oro Valley,AZ,286
+Warminster,PA,285
+Mount Juliet,TN,280
+Valrico,FL,276
+Edwardsville,IL,274
+Madison,TN,272
+Plainfield,IN,271
+Port Richey,FL,270
+North Wales,PA,268
+Hermitage,TN,267
+Collegeville,PA,257
+Plant City,FL,257
+Ballwin,MO,254
+Downingtown,PA,248
+New Hope,PA,246
+Fairview Heights,IL,241
+Voorhees,NJ,241
+Zionsville,IN,234
+Antioch,TN,231
+Hudson,FL,228
+Arnold,MO,227
+Sewell,NJ,226
+Jenkintown,PA,224
+Upper Darby,PA,218
+New Castle,DE,217
+Creve Coeur,MO,214
+Kirkwood,MO,212
+Ambler,PA,211
+Moorestown,NJ,210
+Brownsburg,IN,208
+Maryland Heights,MO,207
+Glen Mills,PA,206
+Warrington,PA,203
+Bala Cynwyd,PA,202
+Goodlettsville,TN,201
+Plymouth Meeting,PA,199
+Medford,NJ,196
+Clayton,MO,193
+Horsham,PA,193
+Blue Bell,PA,190
+Glenside,PA,187
+Southampton,PA,187
+Haddonfield,NJ,183
+Burlington,NJ,177
+Huntingdon Valley,PA,177
+Hatboro,PA,176
+Newtown Square,PA,176
+Kennett Square,PA,175
+Woodbury,NJ,171
+Broomall,PA,170
+Marrero,LA,170
+Abington,PA,169
+Collingswood,NJ,169
+Royersford,PA,169
+Bridgeton,MO,167
+St. Pete Beach,FL,167
+Madeira Beach,FL,165
+Clearwater Beach,FL,163
+Yardley,PA,161
+Sicklerville,NJ,160
+Collinsville,IL,159
+Garden City,ID,158
+Pennsauken,NJ,158
+Harahan,LA,157
+Drexel Hill,PA,153
+Fairless Hills,PA,153
+O'Fallon,IL,153
+Paoli,PA,152
+Chesterfield,MO,151
+Gallatin,TN,151
+Alton,IL,150
+Maple Shade,NJ,148
+Des Peres,MO,147
+Glassboro,NJ,143
+Blackwood,NJ,141
+Tampa Bay,FL,141
+Ruskin,FL,140
+Safety Harbor,FL,139
+Zephyrhills,FL,139
+Aston,PA,135
+King Of Prussia,PA,134
+Maplewood,MO,134
+Odessa,FL,132
+Bristol,PA,131
+Turnersville,NJ,130
+Temple Terrace,FL,129
+Chalfont,PA,124
+Holiday,FL,124
+Lambertville,NJ,124
+Brentwood,MO,123
+Apollo Beach,FL,122
+Chadds Ford,PA,121
+Deptford,NJ,121
+Manchester,MO,121
+Cinnaminson,NJ,120
+Ewing,NJ,119
+Morrisville,PA,118
+Land O Lakes,FL,117
+Bordentown,NJ,116
+Gulfport,FL,115
+Chalmette,LA,114
+Mount Holly,NJ,113
+Narberth,PA,113
+Williamstown,NJ,112
+Elkins Park,PA,111
+Webster Groves,MO,111
+Berwyn,PA,110
+Camden,NJ,108
+Souderton,PA,108
+Trinity,FL,108
+St Charles,MO,107
+Treasure Island,FL,106
+Seffner,FL,105
+Hazelwood,MO,104
+St. Charles,MO,104
+Marana,AZ,102
+Delran,NJ,101
+Clementon,NJ,100
+Hatfield,PA,100
+Berlin,NJ,99
+Feasterville Trevose,PA,99
+Harleysville,PA,98
+University City,MO,98
+Land O' Lakes,FL,97
+Montgomeryville,PA,96
+Folsom,PA,95
+Isla Vista,CA,94
+East Norriton,PA,93
+Montecito,CA,93
+Nolensville,TN,93
+St Albert,AB,93
+Perkasie,PA,91
+Richmond Heights,MO,91
+La Vergne,TN,88
+Swedesboro,NJ,87
+Lansdowne,PA,86
+Richboro,PA,86
+Wynnewood,PA,86
+Hockessin,DE,85
+O Fallon,IL,85
+West Berlin,NJ,85
+Indian Rocks Beach,FL,84
+Old Hickory,TN,84
+Audubon,NJ,81
+Valley Park,MO,80
+Feasterville,PA,79
+Limerick,PA,78
+Mooresville,IN,78
+Mt. Juliet,TN,78
+Quakertown,PA,77
+Clifton Heights,PA,76
+Feasterville-Trevose,PA,76
+Granite City,IL,75
+St Pete Beach,FL,74
+White House,TN,74
+Glen Carbon,IL,73
+Voorhees Township,NJ,73
+Brookhaven,PA,72
+Haddon Township,NJ,72
+St. Albert,AB,70
+Chester Springs,PA,69
+Green Valley,AZ,69
+Sahuarita,AZ,69
+Jefferson,LA,68
+Flourtown,PA,66
+Lithia,FL,66
+Mullica Hill,NJ,66
+Speedway,IN,66
+Glenolden,PA,64
+Runnemede,NJ,64
+Willingboro,NJ,63
+Fort Washington,PA,62
+Lumberton,NJ,62
+Pitman,NJ,61
+Wyncote,PA,60
+Saint Ann,MO,59
+Skippack,PA,59
+Claymont,DE,58
+Hamilton,NJ,58
+Lafayette Hill,PA,58
+Swansea,IL,58
+Terrytown,LA,58
+Saint Pete Beach,FL,57
+Ewing Township,NJ,56
+Westwego,LA,56
+Bellmawr,NJ,54
+Columbia,IL,54
+Haddon Heights,NJ,54
+South Pasadena,FL,54
+Belle Chasse,LA,53
+Gilbertsville,PA,53
+Haverford,PA,53
+Somerdale,NJ,53
+Springfield,TN,53
+Devon,PA,52
+Gibsonton,FL,52
+Hainesport,NJ,52
+Prospect Park,PA,52
+Belleair Bluffs,FL,51
+Vail,AZ,51
+Audubon,PA,50
+Lahaska,PA,50
+Ridley Park,PA,50
+Troy,IL,50
+Chester,PA,49
+Dresher,PA,49
+Schwenksville,PA,49
+Spring City,PA,49
+Bridgeport,PA,48
+Lindenwold,NJ,48
+Shiloh,IL,48
+Sun City Center,FL,48
+Overland,MO,47
+Swarthmore,PA,47
+Boothwyn,PA,46
+Frazer,PA,46
+Holmes,PA,46
+Stratford,NJ,46
+Thorndale,PA,46
+Trevose,PA,46
+Waterloo,IL,46
+Colmar,PA,45
+Evesham Township,NJ,45
+High Ridge,MO,45
+Merchantville,NJ,45
+West Deptford,NJ,45
+Whitestown,IN,45
+Pleasant View,TN,44
+Imperial,MO,43
+Oaks,PA,43
+Beech Grove,IN,42
+Oaklyn,NJ,42
+Pennsville,NJ,42
+Wood River,IL,42
+Ashland City,TN,41
+Summerland,CA,41
+Croydon,PA,40
+Essington,PA,40
+Kenneth City,FL,40
+Maryville,IL,40
+Morton,PA,40
+Boyertown,PA,39
+Camby,IN,39
+Telford,PA,39
+Villanova,PA,39
+Jamison,PA,38
+Palmyra,NJ,38
+Sun Valley,NV,38
+Cheltenham,PA,37
+River Ridge,LA,37
+Sellersville,PA,37
+Affton,MO,36
+Town and Country,MO,36
+Westampton,NJ,36
+Deptford Township,NJ,35
+Eagleville,PA,35
+Ferguson,MO,35
+Gloucester City,NJ,35
+Olivette,MO,35
+Oreland,PA,34
+Barrington,NJ,33
+Folcroft,PA,33
+Mantua,NJ,33
+Mt Juliet,TN,33
+Pennsauken Township,NJ,33
+Sunset Hills,MO,33
+Collingdale,PA,32
+Columbus,NJ,32
+Magnolia,NJ,32
+Mt. Laurel,NJ,32
+Noblesville,IN,32
+Spring House,PA,32
+Virginia City,NV,32
+Crestwood,MO,31
+Dover,FL,31
+Westmont,NJ,31
+Westville,NJ,31
+Woodlyn,PA,31
+Avondale,PA,30
+Marcus Hook,PA,30
+Thonotosassa,FL,30
+Verdi,NV,29
+Buckingham,PA,28
+Coatesville,PA,28
+Hamilton Township,NJ,28
+Indian Shores,FL,28
+Joelton,TN,28
+North Redington Beach,FL,28
+Trappe,PA,28
+Godfrey,IL,27
+Maple Glen,PA,27
+Penndel,PA,27
+Pipersville,PA,27
+Redington Shores,FL,27
+Tierra Verde,FL,27
+Wyndmoor,PA,27
+Arabi,LA,26
+Caseyville,IL,26
+Dublin,PA,26
+McCordsville,IN,26
+Woodbury Heights,NJ,26
+Darby,PA,25
+Holland,PA,25
+Ladue,MO,25
+Lebanon,IL,25
+Radnor,PA,25
+Spanish Springs,NV,25
+Brooklawn,NJ,24
+Mount Ephraim,NJ,24
+Atco,NJ,23
+Garnet Valley,PA,23
+Hammonton,NJ,23
+Lawrence,IN,23
+Millstadt,IL,23
+Rock Hill,MO,23
+Southampton,NJ,23
+Wimauma,FL,23
+Woodstown,NJ,23
+Bellevue,TN,22
+Earth City,MO,22
+Franklinville,NJ,22
+Glendora,NJ,22
+Laurel Springs,NJ,22
+Pennsburg,PA,22
+Riverside,NJ,22
+Saint Albert,AB,22
+Washington Crossing,PA,22
+Elmer,NJ,21
+Gloucester Township,NJ,21
+Maple Shade Township,NJ,21
+Sharon Hill,PA,21
+Kingston Springs,TN,20
+Lebanon,TN,20
+Palmetto,FL,20
+Paulsboro,NJ,20
+Frontenac,MO,19
+Greenbrier,TN,19
+Merion Station,PA,19
+Christiana,DE,18
+Clayton,NJ,18
+Elmwood,LA,18
+Gibbsboro,NJ,18
+Lawnside,NJ,18
+Norwood,PA,18
+Tuscon,AZ,18
+Washington Township,NJ,18
+Whiteland,IN,18
+Cahokia,IL,17
+Erdenheim,PA,17
+Evesham,NJ,17
+Furlong,PA,17
+Greenville,DE,17
+Ivyland,PA,17
+New Britain,PA,17
+Penns Grove,NJ,17
+Pine Hill,NJ,17
+Secane,PA,17
+Shrewsbury,MO,17
+Wenonah,NJ,17
+Westchase,FL,17
+East Alton,IL,16
+East Saint Louis,IL,16
+Mascoutah,IL,16
+Riverton,NJ,16
+Rockledge,PA,16
+Roslyn,PA,16
+Salem,NJ,16
+TAMPA,FL,16
+Mt Laurel,NJ,15
+Rosemont,PA,15
+Tabernacle,NJ,15
+Beverly,NJ,14
+Castleton,IN,14
+Dade City,FL,14
+Hernando Beach,FL,14
+Newport,DE,14
+Pilesgrove,NJ,14
+Plumsteadville,PA,14
+Pontoon Beach,IL,14
+San Antonio,FL,14
+Thorofare,NJ,14
+Catalina,AZ,13
+Eddystone,PA,13
+Glenmoore,PA,13
+Malaga,NJ,13
+New Palestine,IN,13
+Perkiomenville,PA,13
+Primos,PA,13
+Shamong,NJ,13
+Treasure Is,FL,13
+Trooper,PA,13
+Wallingford,PA,13
+Yeadon,PA,13
+Danville,IN,12
+Gibbstown,NJ,12
+Greenfield,IN,12
+Kulpsville,PA,12
+O'fallon,IL,12
+Saint Rose,LA,12
+Stowe,PA,12
+Upper Chichester,PA,12
+Aldan,PA,11
+Boise City,ID,11
+Carneys Point,NJ,11
+Clarksboro,NJ,11
+Edgewater Park,NJ,11
+Lawrenceville,NJ,11
+Manayunk,PA,11
+Oakville,MO,11
+Sappington,MO,11
+Truckee,CA,11
+Beaumont,AB,10
+Berkeley,MO,10
+Gladwyne,PA,10
+Green Lane,PA,10
+Logan Township,NJ,10
+Monroe Township,NJ,10
+Mount Laurel Township,NJ,10
+Bethalto,IL,9
+Chesterbrook,PA,9
+Eastampton,NJ,9
+Pemberton,NJ,9
+Pennington,NJ,9
+Sauget,IL,9
+Scott Air Force Base,IL,9
+St. Ann,MO,9
+St.Louis,MO,9
+St.Petersburg,FL,9
+Toughkenamon,PA,9
+Woolwich Township,NJ,9
+Avondale,LA,8
+Belleair,FL,8
+Bucks,PA,8
+Burlington Township,NJ,8
+Florence,NJ,8
+Harrison Township,NJ,8
+Jeffersonville,PA,8
+Kuna,ID,8
+Lawrence Township,NJ,8
+Luling,LA,8
+Mantua Township,NJ,8
+Monroeville,NJ,8
+Southport,IN,8
+Talleyville,DE,8
+Town & Country,MO,8
+Vincentown,NJ,8
+Waterford Works,NJ,8
+West Conshohocken,PA,8
+Worcester,PA,8
+Breckenridge Hills,MO,7
+Bryn Athyn,PA,7
+Cedars,PA,7
+Crum Lynne,PA,7
+Jennings,MO,7
+Kimmswick,MO,7
+Meraux,LA,7
+Mount Lemmon,AZ,7
+Philadephia,PA,7
+Silverdale,PA,7
+Smithton,IL,7
+St Louis Downtown,MO,7
+Titusville,NJ,7
+Town 'n' Country,FL,7
+Whites Creek,TN,7
+Bayonet Point,FL,6
+Carrollwood,FL,6
+Churchville,PA,6
+East Lansdowne,PA,6
+Fountainville,PA,6
+Freeburg,IL,6
+Holicong,PA,6
+Kimberton,PA,6
+Lester,PA,6
+Line Lexington,PA,6
+Linwood,PA,6
+Medford Lakes,NJ,6
+Milmont Park,PA,6
+NASHVILLE,TN,6
+National Park,NJ,6
+New Whiteland,IN,6
+Newfield,NJ,6
+Pennsville Township,NJ,6
+Phila,PA,6
+Red Hill,PA,6
+Roebling,NJ,6
+St. Davids,PA,6
+TUCSON,AZ,6
+Town And Country,MO,6
+Winslow Township,NJ,6
+Zieglerville,PA,6
+Bear,DE,5
+Belle Meade,TN,5
+Bensalem Township,PA,5
+Berlin Township,NJ,5
+Berry Hill,TN,5
+Citrus Park,FL,5
+Clermont,IN,5
+Concordville,PA,5
+Delanco,NJ,5
+Donelson,TN,5
+Elsmere,DE,5
+Erial,NJ,5
+Fairview,TN,5
+Hulmeville,PA,5
+Land O'Lakes,FL,5
+Lionville,PA,5
+Mansfield,NJ,5
+Masaryktown,FL,5
+Mccordsville,IN,5
+Mt Holly,NJ,5
+Penn Valley,PA,5
+Redingtn Shor,FL,5
+Saint Davids,PA,5
+Scott AFB,IL,5
+St Ann,MO,5
+St. Rose,LA,5
+Violet,LA,5
+Warson Woods,MO,5
+West Trenton,NJ,5
+Bargersville,IN,4
+Belleair Blf,FL,4
+Bridge City,LA,4
+Brooklyn,IL,4
+Casas Adobes,AZ,4
+Cedar Brook,NJ,4
+Chesilhurst,NJ,4
+Dupo,IL,4
+East St Louis,IL,4
+East St. Louis,IL,4
+Eastampton Township,NJ,4
+Elverson,PA,4
+Enoch,AB,4
+Fairmont City,IL,4
+Florence Township,NJ,4
+Green Park,MO,4
+Hilltown,PA,4
+Indianpolis,IN,4
+Lederach,PA,4
+Lima,PA,4
+Linfield,PA,4
+Madison,IL,4
+Marlborough,MO,4
+Meadowbrook,PA,4
+Mehlville,MO,4
+Mendenhall,PA,4
+Mickleton,NJ,4
+Mt Laurel Township,NJ,4
+Mt. Ephraim,NJ,4
+N Redngtn Bch,FL,4
+Nampa,ID,4
+New Washoe City,NV,4
+Normandy,MO,4
+North Redington Bch,FL,4
+OFallon,IL,4
+Ozona,FL,4
+PHILADELPHIA,PA,4
+Pegram,TN,4
+Petersburg,FL,4
+Pittsgrove,NJ,4
+Saint John,MO,4
+Skippack Village,PA,4
+Southampton Township,NJ,4
+Southeast Edmonton,AB,4
+Southwest Philadelphia,PA,4
+Strafford,PA,4
+Thornton,PA,4
+Twin Oaks,MO,4
+Unionville,PA,4
+Valley Forge,PA,4
+Washington Park,IL,4
+Washoe Valley,NV,4
+West Norriton,PA,4
+West Point,PA,4
+Wrightstown,PA,4
+tucson,AZ,4
+Abington Township,PA,3
+Andalusia,PA,3
+Belleair Beach,FL,3
+Chesterfield,NJ,3
+Chestnut Hill,PA,3
+Corona de Tucson,AZ,3
+Cortaro,AZ,3
+Cottage Hills,IL,3
+Cumberland,IN,3
+Earlington,PA,3
+East Nashville,TN,3
+Fairview Village,PA,3
+Franklin,NJ,3
+Hi-Nella,NJ,3
+Hillsborough County,FL,3
+Jobstown,NJ,3
+LARGO,FL,3
+Lebanon,IN,3
+Lower Gwynedd,PA,3
+Lower Gwynedd Township,PA,3
+Marshallton,DE,3
+Melrose Park,PA,3
+Metarie,LA,3
+Mont Clare,PA,3
+Montchanin,DE,3
+Mt.Laurel,NJ,3
+NEW ORLEANS,LA,3
+Oaklandon,IN,3
+PHILA,PA,3
+Palm harbor,FL,3
+Parker Ford,PA,3
+Pinellas,FL,3
+Pinellas park,FL,3
+Pineville,PA,3
+Reno,CA,3
+SAINT LOUIS,MO,3
+Saint Bernard,LA,3
+Saint Peters,PA,3
+Saint Petersburg Beach,FL,3
+Sanatoga,PA,3
+South Tucson,AZ,3
+St  Louis,MO,3
+St. Loius,MO,3
+St. Peters,MO,3
+Sumneytown,PA,3
+Sun City,FL,3
+Tinicum Township,PA,3
+Trainer,PA,3
+Tullytown,PA,3
+Upland,PA,3
+Warrington Township,PA,3
+West Edmonton,AB,3
+Willingboro Township,NJ,3
+Wilmington Manor,DE,3
+Winslow,NJ,3
+Ybor City,FL,3
+lutz,FL,3
+philadelphia,PA,3
+Alloway,NJ,2
+Arrington,TN,2
+Balm,FL,2
+Belle Chase,LA,2
+Bellefonte,DE,2
+Belmont Hills,PA,2
+Birchrunville,PA,2
+Black Jack,MO,2
+Blooming Glen,PA,2
+Bosie,ID,2
+Bradenton,FL,2
+Bridgeport,NJ,2
+Bristol Twp,PA,2
+Brooksville,FL,2
+Bucks County,PA,2
+Cane Ridge,TN,2
+Carson City,NV,2
+Carversville,PA,2
+Catalina Foothills,AZ,2
+Centreville,IL,2
+Cheltenham Township,PA,2
+Chester Heights,PA,2
+Chichester,PA,2
+Cold Springs,NV,2
+Cornwells Heights,PA,2
+Corona De Tucson,AZ,2
+Creve Couer,MO,2
+EdMonton,AB,2
+Eddington,PA,2
+Edgmont,PA,2
+Fairview Hts,IL,2
+Fairview Hts.,IL,2
+Feasterville-trevose,PA,2
+Franconia,PA,2
+Glendale,MO,2
+Gradyville,PA,2
+Greater Northdale,FL,2
+Grenloch,NJ,2
+Gwynedd,PA,2
+Haddon,NJ,2
+Haddon Twp,NJ,2
+Hartford,IL,2
+Hopewell Township,NJ,2
+INDIANAPOLIS,IN,2
+Kenneth,FL,2
+LANSDALE,PA,2
+Lakeland,FL,2
+Land o lakes,FL,2
+Lavergne,TN,2
+Lawrence,NJ,2
+Lemay,MO,2
+Lenni,PA,2
+Lower Merion,PA,2
+Lower Southampton Township,PA,2
+Martinsville,IN,2
+Mc Cordsville,IN,2
+Mechanicsville,PA,2
+Mercerville,NJ,2
+Meridan,ID,2
+Montgomery,PA,2
+Montgomery Township,PA,2
+Moorestown-Lenola,NJ,2
+Mount Royal,NJ,2
+Murfreesboro,TN,2
+Nashville,IN,2
+Nashville-Davidson metropolitan government (balance),TN,2
+New orleans,LA,2
+Ofallon,IL,2
+Oldmans,NJ,2
+Oldmans Township,NJ,2
+Oracle,AZ,2
+Parkside,PA,2
+Pasadena,FL,2
+Pasco,FL,2
+Pass-a-Grille Beach,FL,2
+Pennsylvania,PA,2
+Philadelphia,NJ,2
+Philadelphia PA,PA,2
+Pike Creek,DE,2
+Pottsgrove,PA,2
+RIVERVIEW,FL,2
+Radnor Township,PA,2
+Redington Beach,FL,2
+Richwood,NJ,2
+Ridley,PA,2
+Rillito,AZ,2
+Rose Valley,PA,2
+Roxborough,PA,2
+ST. PETERSBURG,FL,2
+Saint Leo,FL,2
+"Saint Louis,",MO,2
+Santa Barbra,CA,2
+Sassamansville,PA,2
+Shady Hills,FL,2
+South County,MO,2
+South Tampa,FL,2
+Southeastern,PA,2
+St Louis County,MO,2
+St Pete,FL,2
+St Rose,LA,2
+Stead,NV,2
+Tampa Florida,FL,2
+Tampa Palms,FL,2
+Terra Ceia,FL,2
+Town N Country,FL,2
+"Tucson, Arizona",AZ,2
+Upper Pittsgrove,NJ,2
+Upper Southampton,PA,2
+VALRICO,FL,2
+Waggaman,LA,2
+Wesley chapel,FL,2
+Westtown,PA,2
+Winchester,MO,2
+Yorklyn,DE,2
+Zieglersville,PA,2
+boise,ID,2
+clearwater,FL,2
+new orleans,LA,2
+reno,NV,2
+tampa,FL,2
+AB Edmonton,AB,1
+AMBLER,PA,1
+ARDMORE,PA,1
+AVON,IN,1
+Afton,MO,1
+Alberta Park Industrial,AB,1
+Algiers,LA,1
+Aliso Viejo,CA,1
+Almonesson,NJ,1
+Apollo beach,FL,1
+Apopka,FL,1
+Arden,DE,1
+Arizona,AZ,1
+Ashland,TN,1
+Aston,DE,1
+Austin,TX,1
+BOISE,ID,1
+BOISE AP,ID,1
+BRANDON,FL,1
+Barnhart,MO,1
+Barto,PA,1
+"Beech Grove,",IN,1
+Bel Ridge,MO,1
+Bellair,FL,1
+Belleair Blufs,FL,1
+Bellefontaine,MO,1
+Bellefontaine Neighbors,MO,1
+Bellville,IL,1
+Bennington,VT,1
+Bensalem. Pa,PA,1
+Berlin Boro,NJ,1
+Bethel,PA,1
+Bethel Township,PA,1
+Blvd,MO,1
+Boise (Meridian),ID,1
+Boone,IN,1
+Boone,NC,1
+Bordentown Township,NJ,1
+Boston,MA,1
+Boulevard,FL,1
+Boutte,LA,1
+Bradenton Beach,FL,1
+Brentwood - Cool Springs,TN,1
+Bridgeton,NJ,1
+Buckingham Township,PA,1
+Bucktown,LA,1
+Bywater,LA,1
+CHELTENHAM,PA,1
+CHESTER HEIGHTS,PA,1
+CLEARWATER,FL,1
+CLEARWATER BEACH,FL,1
+CLIFTON HEIGHTS,PA,1
+COLMAR,PA,1
+CONSHOHOCKEN,PA,1
+CREVE COEUR,MO,1
+Caln,PA,1
+Carney's Point,NJ,1
+Casa Adobes,AZ,1
+Cedarbrook,NJ,1
+Center City Philadelphia,PA,1
+Center Square,PA,1
+Central Tampa,FL,1
+Centreville,DE,1
+Cerritos,CA,1
+Chalemette,LA,1
+Charlack,MO,1
+Charles,MO,1
+Charlotte,PA,1
+Chattanooga,TN,1
+Cherry Hil,NJ,1
+Cherry Hill,PA,1
+Cherry Hill Mall,NJ,1
+"Cherry Hill,",NJ,1
+Chester Township,PA,1
+Chicago,IL,1
+Claerwater,FL,1
+Clarksville,TN,1
+Claymont,PA,1
+ClearWater,FL,1
+"Clearwater,",FL,1
+Clearwater/ Countryside,FL,1
+College Place,WA,1
+Concord Township,PA,1
+Concord Village,MO,1
+Conshohoeken,PA,1
+Cornwells Hts,PA,1
+Costa Mesa,CA,1
+Covington,LA,1
+Creamery,PA,1
+Crosswicks,NJ,1
+Crystal Beach,FL,1
+Crystal Springs,FL,1
+Cynwyd,PA,1
+DELRAN,NJ,1
+DONELSON,TN,1
+DOWNINGTOWN,PA,1
+DUNEDIN,FL,1
+Danboro,PA,1
+Delaware,PA,1
+Delaware County,PA,1
+Dellwood,MO,1
+Delran Township,NJ,1
+Delran Twp,NJ,1
+Delray Beach,IN,1
+Denver,CO,1
+Deptford Twp,NJ,1
+Devon-Berwyn,PA,1
+Douglassville,PA,1
+Dover,DE,1
+"Downingtown,",PA,1
+Downtown,AB,1
+Downtown,LA,1
+Downtown Indianapolis,IN,1
+Drexel,PA,1
+Drexel Heights,AZ,1
+Drexel Hil,PA,1
+Dumont,CO,1
+Dunnellon,FL,1
+E Saint Louis,IL,1
+E. Norristown,PA,1
+Eagle,CA,1
+Eagle,UT,1
+"Eagle,",ID,1
+East Boise,ID,1
+East Edmonton,AB,1
+East Falls,PA,1
+East Greenville,PA,1
+East Lake,FL,1
+East Norristown,PA,1
+East Tampa,FL,1
+Eaux Claires,AB,1
+Echelon,NJ,1
+Edgemont,PA,1
+Edgemoor,DE,1
+Edmonton City Centre,AB,1
+Edmundson,MO,1
+Elfers,FL,1
+Elk Township,NJ,1
+Ellisville,MO,1
+Erdenheim Pa,PA,1
+Evshm Twp,NJ,1
+Ewing Twp,NJ,1
+FOLSOM,PA,1
+Fairland,IN,1
+Fairless,PA,1
+Fairmount Park,PA,1
+Falls,PA,1
+Fallsington,PA,1
+Feasterville Trev,PA,1
+"Feasterville-Trevose, PA",PA,1
+Feastville,PA,1
+Fernley,NV,1
+Festerville,PA,1
+Fieldsboro,NJ,1
+Flanders,NJ,1
+Folsom,NJ,1
+Forest Grove,PA,1
+Forest Hills,FL,1
+Fort Saskatchewan,AB,1
+Fortville,IN,1
+Foster Pond,IL,1
+Fox Street,PA,1
+Franklin,IN,1
+Frederick,PA,1
+Freehold,NJ,1
+French Quarter,LA,1
+French Quarter - CBD,LA,1
+GARDEN CITY,ID,1
+Gardenville,PA,1
+Gentilly,LA,1
+Glen Mills,DE,1
+Glendale,NJ,1
+Glenmore,PA,1
+Glenn Mills,PA,1
+Glenoldan,PA,1
+Gloucester,NJ,1
+Goodletsville,TN,1
+Greater Carrollwood,FL,1
+Green Hills,TN,1
+Green Valle,AZ,1
+Gulph Mills,PA,1
+Gwynedd Valley,PA,1
+HENDERSONVILLE,TN,1
+HUdson,FL,1
+Had Twp,NJ,1
+Hadden,NJ,1
+Haddon township,NJ,1
+Hamiltion,NJ,1
+Hampton,MO,1
+Hancock,IN,1
+Hartsville,PA,1
+Hatboro,NJ,1
+"Haverford,",PA,1
+Haverton,PA,1
+"Havertown, PA",PA,1
+Hernando Bch,FL,1
+Hi Nella,NJ,1
+Hillsborough,FL,1
+Hilltop,NJ,1
+Holland Southampton,PA,1
+Hollywood,PA,1
+Honey Brook,PA,1
+Horseshoe Bend,ID,1
+Houston,TX,1
+Huntingdon Valley PA,PA,1
+Huntington Valley,PA,1
+Hurffville,NJ,1
+INpolis,IN,1
+Indian Rocks Beach.,FL,1
+Indiana,IN,1
+Indianapolis city (balance),IN,1
+"Indianapolis,",IN,1
+Inglewood,TN,1
+Jefferson Parish,LA,1
+Johnson,IN,1
+KIRKWOOD,MO,1
+Kalispell,MT,1
+Key Largo,FL,1
+Kimmiswick,MO,1
+King of Prussi,PA,1
+Kings Beach,CA,1
+Kirklyn,PA,1
+Kng Of Prusia,PA,1
+Knoxville,TN,1
+LANGHORNE,PA,1
+LITHIA,FL,1
+LOWER MERION,PA,1
+LOWER PROVIDENCE,PA,1
+Lake Saint Louis,MO,1
+Lakewood,TN,1
+Land O'lakes,FL,1
+Land o Lakes,FL,1
+"Land o' Lakes,",FL,1
+Land-O-Lakes,FL,1
+Landsale,PA,1
+Landsdale,PA,1
+Largo (Walsingham),FL,1
+Lawrence Township,IN,1
+Lemay Ferry,MO,1
+Lincoln,IL,1
+Liverpool,XMS,1
+London Grove,PA,1
+Los Angeles,CA,1
+Los Ranchitos,AZ,1
+Lower Southampton,PA,1
+Lula Lula,HI,1
+Lutz fl,FL,1
+Lynnfield,MA,1
+MADISON,TN,1
+MANCHESTER,MO,1
+MARLTON,NJ,1
+MEDIA,PA,1
+MERIDIAN,ID,1
+MIDDLE CITY WEST,PA,1
+MacDill AFB,FL,1
+Macdill Afb,FL,1
+Madiera Beach,FL,1
+Mandeville,LA,1
+Mango,FL,1
+Maran,AZ,1
+Maryland Height,MO,1
+"Maryland Height, MO",MO,1
+McCarran,NV,1
+Media,DE,1
+Mehville,MO,1
+Meridian,CA,1
+Merion,PA,1
+Merion Park,PA,1
+Meterie,LA,1
+Middletown,PA,1
+Mission Canyon,CA,1
+Mississauga,LA,1
+Monchanin,DE,1
+Monroe,NJ,1
+Monrovia,IN,1
+"Mount Holly,",NJ,1
+Mount Juliet,TX,1
+Mount Laurel,NV,1
+Mt  Juliet,TN,1
+Mt Ephraim,NJ,1
+"Mt Laurel Twp, NJ",NJ,1
+Mt. Airy,PA,1
+Mt. Holly,NJ,1
+Mt.Juliet,TN,1
+Mulberry,FL,1
+N Redington Bch,FL,1
+N.Wales,PA,1
+NASHVILLE AP,TN,1
+NEW ORLEANS AP,LA,1
+NEW PORT RICHEY,FL,1
+NEW PRT RCHY,FL,1
+NEWARK,DE,1
+NORRISTOWN,PA,1
+NORTH WALES,PA,1
+NW Edmonton,AB,1
+Nashville,TX,1
+"Nashville,",TN,1
+Nevada,NV,1
+New Berlinville,PA,1
+New Britian,PA,1
+New Jersey,NJ,1
+New Orlaens,LA,1
+New Orleans,FL,1
+New Prt Rchy,FL,1
+New Pt Richey,FL,1
+New Tampa,FL,1
+New castle,DE,1
+Newcastle,DE,1
+Newportville,PA,1
+Newton,PA,1
+Newton Square,PA,1
+Newtown Sq,PA,1
+Newtown Sq.,PA,1
+Newtown Sqaure,PA,1
+Newtown Township,PA,1
+Newtown square,PA,1
+Nixa,TN,1
+Nolenville,TN,1
+Norriton,PA,1
+Norritown,PA,1
+North Coventry,PA,1
+North Coventry Township,PA,1
+North Maple Shade,NJ,1
+North Marlton,NJ,1
+Nsshville,TN,1
+O' Fallon,IL,1
+Oakford,PA,1
+"Old Hickory, TN",TN,1
+Old Strathcona,AB,1
+Oro valley,AZ,1
+Overbrook,PA,1
+Oxnard,CA,1
+PINELLAS PARK,FL,1
+PLYMOUTH MTNG,PA,1
+POTTSTOWN,PA,1
+Pagedale,MO,1
+"Palm Harbor, FL",FL,1
+Pass-a-Grille,FL,1
+Pedricktown,NJ,1
+Peerless Park,MO,1
+Penllyn,PA,1
+Pennsaulen,NJ,1
+Philadelphia (Northeast Philly),PA,1
+Philadelphila,PA,1
+Philiadelphia,PA,1
+Philiidelphia,PA,1
+Philly,PA,1
+Phonixville,PA,1
+Picture Rocks,AZ,1
+Pilgrim Gardens,PA,1
+Pilot Sound Area West Portion,AB,1
+Pine Forge,PA,1
+Pine HIll,NJ,1
+Pinecrest West Park,FL,1
+Pittsgrove Township,NJ,1
+Plainfiled,IN,1
+Pleasant Township,IN,1
+Plymouth Township,PA,1
+Port Hueneme,CA,1
+Primos-Secane,PA,1
+Quinton,NJ,1
+RADNOR,PA,1
+RENO,NV,1
+RENO AP,NV,1
+Rancocas,NJ,1
+Real Goleta,CA,1
+Redingtn Shores,FL,1
+Redington Shore,FL,1
+Reno City,NV,1
+Reno Nevada,NV,1
+Reno Sparks,NV,1
+Ridley Township,PA,1
+River View,FL,1
+Riveridge,LA,1
+Riverview Fl,FL,1
+Roseville,MI,1
+Rosewood Heights,IL,1
+Roxana,IL,1
+Royford,PA,1
+Rural Hill,TN,1
+Rushland,PA,1
+Rutledge,PA,1
+S Pasadena,FL,1
+S.Pasadena,FL,1
+SAINT LOUIS AP,MO,1
+SAINT PETERSBURG,FL,1
+SANTA BARBARA,CA,1
+SANTA BARBARA AP,CA,1
+SEMINOLE,FL,1
+SPARKS,NV,1
+SPRINGHILL,FL,1
+ST LOUIS,MO,1
+ST. Louis,MO,1
+ST. PETE BEACH,FL,1
+Safety  Harbor,FL,1
+"Safety Harbor,",FL,1
+Safety Hatbor,FL,1
+"Saint Petersburg,",FL,1
+Saint louis,MO,1
+Saintt Petersburg,FL,1
+Saint Louis,MO,1
+Salinas,CA,1
+San Anselmo,ID,1
+Santa  Barbara,CA,1
+Santa Barbara & Ventura Counties,CA,1
+"Santa Barbara,",CA,1
+Santa Clara,CA,1
+Santa Maria,CA,1
+Santa Rita,AZ,1
+Santa Ynez,CA,1
+Sarasota,FL,1
+Scott Afb,IL,1
+Shade,NJ,1
+Sherwood,AB,1
+Slidell,LA,1
+Smyrna,DE,1
+Solebury,PA,1
+South Burlington,NJ,1
+South Cherry Hill,NJ,1
+South Cinnaminson,NJ,1
+South Harrison Township,NJ,1
+South Lake Tahoe,CA,1
+South Madison,TN,1
+South Reno,NV,1
+South Roxana,IL,1
+Southhampton,PA,1
+Southwest Tampa,FL,1
+Spark,NV,1
+Sparks,CA,1
+Sparks NV,NV,1
+"Sparks,",NV,1
+Spokane,WA,1
+Spring HIll,FL,1
+Spring Hill,CA,1
+Spring Hill,TN,1
+Springfield,NJ,1
+Springhill,FL,1
+Spruce Grove,AB,1
+St Boise,ID,1
+St Louis,IL,1
+St Pete beach,FL,1
+St Petersberg,FL,1
+St Petersurg,FL,1
+St louis,MO,1
+St.  Charles,MO,1
+St. Leo,FL,1
+St. Louis,IL,1
+St. Louis County,MO,1
+St. Pete,FL,1
+St. Petersberg,FL,1
+St.Ann,MO,1
+St.Charles,MO,1
+St.Pete Beach,FL,1
+St.Rose,LA,1
+St.louis,MO,1
+Staint Albert,AB,1
+Stanton,DE,1
+Star,ID,1
+Ste C,FL,1
+Stone Harbor,NJ,1
+Stroudsburg,PA,1
+Sturgeon Couny,AB,1
+Sullivan,MO,1
+Summerhaven,AZ,1
+Swedeland,PA,1
+TAMPA AP,FL,1
+TARPON SPRINGS,FL,1
+TEMPLE TERR,FL,1
+TRENTON,NJ,1
+TRINITY,FL,1
+TUCSON AP,AZ,1
+TWN N CNTRY,FL,1
+Tampa,CA,1
+Tampa,SD,1
+Tampa - North,FL,1
+Tampa - South,FL,1
+Tampa Terrace,FL,1
+"Tampa,",FL,1
+"Tampa,Fl",FL,1
+Tampla,FL,1
+Tarpon springs,FL,1
+Temple Terr,FL,1
+Tennesse,TN,1
+Thonosassa,FL,1
+Tierre Verde,FL,1
+Tinicum,PA,1
+Tortola,VI,1
+Town & County,MO,1
+Town 'N' Country,FL,1
+Town n Country,FL,1
+Tren,NJ,1
+Trolley Square,DE,1
+Tucson,HI,1
+Tuson,AZ,1
+Twin oaks,MO,1
+Twn N Cntry,FL,1
+Tylersport,PA,1
+UPPER MORELAND,PA,1
+UPPR BLCK EDY,PA,1
+University Park,FL,1
+Upper Darby PA,PA,1
+Upper Gwynedd,PA,1
+Upper Merion Township,PA,1
+Upper Pottsgrove,PA,1
+Upper Southampton Township,PA,1
+VC Highlands,NV,1
+Vail,CO,1
+Valencia,CA,1
+Valencia West,AZ,1
+Ventura,CA,1
+View,TN,1
+Vineland,NJ,1
+Virtual,PA,1
+W Cherry Hill,NJ,1
+W. Berlin,NJ,1
+W.Chester,PA,1
+WEST CHESTER,PA,1
+WILLOW GROVE,PA,1
+Wales,PA,1
+Wanamaker,IN,1
+Warwick,PA,1
+Washington,NJ,1
+Washington,PA,1
+Washington Twp,NJ,1
+Washoe,NV,1
+Wayne/Radnor,PA,1
+Webster Grvs,MO,1
+Wesley Ccapel,FL,1
+Wesley Chapel  FL,FL,1
+West  Deptford,NJ,1
+West Alton,MO,1
+West Bradford Township,PA,1
+West Chester PA,PA,1
+West Collingswood Heights,NJ,1
+West Deptford Townsh,NJ,1
+West Hill,CA,1
+West Mount Holly,NJ,1
+West Nashville,TN,1
+West Philadelphia,PA,1
+West Rockhill,PA,1
+Westampton Township,NJ,1
+Westfield,IN,1
+Westhampton,NJ,1
+Westmont - Haddon Towsship,NJ,1
+Whitehouse,TN,1
+Wilimington,DE,1
+Williamsport,PA,1
+Wilmington,PA,1
+Winterthur,DE,1
+Woodbourne,PA,1
+Woodbury Hts.,NJ,1
+Woodson Terrace,MO,1
+Woolwich Twp,NJ,1
+Woolwich Twp.,NJ,1
+Wycombe,PA,1
+Wyndlake Condominium,FL,1
+YARDLEY,PA,1
+Yardley Boro,PA,1
+Zephryhills,FL,1
+Zionsville In,IN,1
+abington,PA,1
+chicago,FL,1
+clifton heights,PA,1
+elmwood,LA,1
+erdenheim,PA,1
+franklin,TN,1
+frazer,PA,1
+gilbertsville,PA,1
+goodlettsville,TN,1
+horsham,PA,1
+indianopolis,IN,1
+kenner,LA,1
+kop,PA,1
+land o lakes,FL,1
+langhorne,PA,1
+largo,FL,1
+lawrence,IN,1
+maple shade nj,NJ,1
+meridian,ID,1
+metairie,LA,1
+nashville,TN,1
+nolensville,TN,1
+pennsauken,NJ,1
+phoenixville,PA,1
+quakertown,PA,1
+riverview,FL,1
+saint ann,MO,1
+saint petersburg,FL,1
+santa Barbara,CA,1
+sewell,NJ,1
+sparks,NV,1
+spring city,PA,1
+spring hill,FL,1
+telford,PA,1
+wesley chapel,FL,1
+wilmington,DE,1
+wimauma,FL,1
+​Clayton,MO,1
+​Largo,FL,1
+​Lithia,FL,1

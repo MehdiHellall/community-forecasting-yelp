@@ -12,13 +12,13 @@ The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
 
 - Extracted **6,215 businesses**, **635,521 reviews**, and **245,421 reviewing users**.
 - Built a weighted active-reviewer friendship graph with **26,598 nodes** and **116,558 edges**.
-- Created a modeling table with **1,151 active businesses** and **95,533 business-month rows**.
+- Created a modeling table with **876 active businesses** and **68,249 business-month rows** after filtering to the 2015-2021 modeling window.
 - Added two prediction tasks:
   - next-month review-count regression;
   - attention-pulse classification for unusually high next-month activity.
 - Compared historical, business, SNA, NLP, and all-modality Random Forest models against simple baselines.
 
-Headline finding: raw review-count forecasting is still driven mainly by recent temporal activity. The attention-pulse task gives SNA and NLP signals a clearer role, and it better matches the community-attention objective.
+Headline finding: raw review-count forecasting is still driven mainly by recent temporal activity, especially during the COVID-era test. Attention pulses better match the community-attention objective, but SNA and NLP add modest incremental predictive signal compared with historical and business features.
 
 ## Repository Structure
 

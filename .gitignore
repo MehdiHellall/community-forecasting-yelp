@@ -31,9 +31,12 @@ data/interim/*
 data/processed/*
 !data/processed/.gitkeep
 
-# Generated outputs
+# Generated report outputs
 outputs/*
 !outputs/.gitkeep
+!outputs/*.csv
+!outputs/figures/
+!outputs/figures/**
 
 # OS/editor files
 .DS_Store
