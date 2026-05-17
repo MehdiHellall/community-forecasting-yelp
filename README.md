@@ -18,6 +18,7 @@ The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
   - attention-pulse classification for unusually high next-month activity.
 - Compared simple baselines, Random Forests, HistGradientBoosting, Poisson/logistic models, selected-feature variants, and pulse probability diagnostics.
 - Added validation-tuned attention-pulse thresholds and top-k pulse retrieval metrics.
+- Added capped TF-IDF topic indicators, pulse-predecessor analysis, and report-ready attention-pulse case studies.
 
 
 ## Repository Structure
@@ -28,7 +29,7 @@ data/
   interim/        city-level extracted data, ignored by Git
   processed/      modeling-ready data, ignored by Git
 notebooks/        reproducible academic workflow
-outputs/          generated metrics, predictions, and figures, ignored by Git
+outputs/          report metrics, predictions, figures, and interpretation tables
 ```
 
 ## Data
@@ -43,7 +44,7 @@ yelp_academic_dataset_checkin.json
 yelp_academic_dataset_tip.json
 ```
 
-Raw and generated data are not committed because of size.
+Raw, interim, and processed data are not committed because of size. Report-ready outputs under `outputs/` are committed so the figures and summary tables can be reviewed without rerunning the full workflow.
 
 ## Notebook Workflow
 
@@ -68,11 +69,13 @@ data/interim/new_orleans/
 data/processed/new_orleans/
 outputs/city_business_counts.csv
 outputs/forecasting_metrics.csv
-outputs/forecasting_predictions.csv
 outputs/attention_pulse_metrics.csv
-outputs/attention_pulse_predictions.csv
 outputs/attention_pulse_topk_metrics.csv
 outputs/attention_pulse_calibration.csv
+outputs/model_comparison_summary.csv
+outputs/nlp_tfidf_terms.csv
+outputs/pulse_predecessor_analysis.csv
+outputs/attention_pulse_case_studies.csv
 outputs/figures/
 ```
 
@@ -84,6 +87,37 @@ outputs/figures/sna/
 outputs/figures/feature_engineering/
 outputs/figures/models/
 ```
+
+Full prediction files are regenerated locally by notebook `06`:
+
+```text
+outputs/forecasting_predictions.csv
+outputs/attention_pulse_predictions.csv
+```
+
+They are intentionally ignored by Git because they are large and can be recreated from the notebooks.
+
+## Reproducibility
+
+Run the notebooks in this exact order:
+
+```text
+01_dataset_overview_and_city_selection.ipynb
+02_new_orleans_data_preparation.ipynb
+03_exploratory_analysis.ipynb
+04_social_network_analysis.ipynb
+05_time_series_feature_engineering.ipynb
+06_forecasting_models.ipynb
+07_results_interpretation.ipynb
+```
+
+Expected tracked outputs after a full run:
+
+- metrics and summary tables in `outputs/*.csv`;
+- figures in `outputs/figures/eda/`, `outputs/figures/sna/`, `outputs/figures/feature_engineering/`, and `outputs/figures/models/`;
+- modeling-ready data in `data/processed/new_orleans/`, regenerated locally but ignored by Git.
+
+The full prediction CSVs are local regeneration artifacts and are not committed.
 
 ## Environment
 

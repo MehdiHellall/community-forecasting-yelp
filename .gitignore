@@ -35,6 +35,7 @@ data/processed/*
 outputs/*
 !outputs/.gitkeep
 !outputs/*.csv
+outputs/*_predictions.csv
 !outputs/figures/
 !outputs/figures/**
 
