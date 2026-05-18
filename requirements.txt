@@ -5,3 +5,4 @@ networkx>=3.2
 matplotlib>=3.8
 jupyter>=1.0
 vaderSentiment>=3.3.2
+prophet>=1.3
