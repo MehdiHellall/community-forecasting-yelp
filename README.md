@@ -11,7 +11,7 @@ Research question:
 The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
 
 - Extracted **6,215 businesses**, **635,521 reviews**, and **245,421 reviewing users**.
-- Built a weighted active-reviewer friendship graph with **26,598 nodes** and **116,558 edges**.
+- Built a train-window weighted active-reviewer friendship graph using **2015-02 through 2017-12** reviews, with **8,351 nodes** and **23,563 edges**.
 - Created a modeling table with **876 active businesses** and **68,249 business-month rows** after filtering to the 2015-2021 modeling window.
 - Added two prediction tasks:
   - next-month review-count regression;
@@ -28,6 +28,7 @@ data/
   raw/yelp/       original Yelp JSON files, ignored by Git
   interim/        city-level extracted data, ignored by Git
   processed/      modeling-ready data, ignored by Git
+docs/             project notes, including leakage-control decisions
 notebooks/        reproducible academic workflow
 outputs/          report metrics, predictions, figures, and interpretation tables
 ```
@@ -58,7 +59,7 @@ Raw, interim, and processed data are not committed because of size. Report-ready
 07_results_interpretation.ipynb
 ```
 
-The notebooks move from scope selection and extraction to EDA, SNA design, feature engineering, modeling, and final interpretation.
+The notebooks move from scope selection and extraction to EDA, SNA design, feature engineering, modeling, and final interpretation. The SNA leakage guard is documented in `docs/sna_training_window.md`.
 
 ## Generated Outputs
 
