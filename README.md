@@ -1,6 +1,6 @@
 # Community Forecasting with Yelp Data
 
-This project studies **local community attention dynamics** on Yelp. It combines time-series review history, business metadata, social-network exposure, and lightweight NLP features to forecast which New Orleans businesses will receive future review activity or short-term attention pulses.
+This project studies **pre-COVID local community attention dynamics** on Yelp. It combines time-series review history, business metadata, social-network exposure, and lightweight NLP features to forecast which New Orleans businesses will receive future review activity or short-term attention pulses.
 
 Research question:
 
@@ -12,13 +12,25 @@ The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
 
 - Extracted **6,215 businesses**, **635,521 reviews**, and **245,421 reviewing users**.
 - Built a train-window weighted active-reviewer friendship graph using **2015-02 through 2017-12** reviews, with **8,351 nodes** and **23,563 edges**.
-- Created a modeling table with **876 active businesses** and **68,249 business-month rows** after filtering to the 2015-2021 modeling window.
+- Created a pre-COVID modeling table with **715 active businesses** and **40,822 business-month rows**, using a target window that ends at **2019-12**.
 - Added two prediction tasks:
   - next-month review-count regression;
   - attention-pulse classification for unusually high next-month activity.
 - Compared simple baselines, Random Forests, HistGradientBoosting, Poisson/logistic models, selected-feature variants, and pulse probability diagnostics.
 - Added validation-tuned attention-pulse thresholds and top-k pulse retrieval metrics.
 - Added capped TF-IDF topic indicators, pulse-predecessor analysis, and report-ready attention-pulse case studies.
+
+## Final Evaluation Scope
+
+The final academic claims are intentionally **pre-COVID only**. The forecasting split is:
+
+```text
+train:      2015-02 to 2017-12
+validation: 2018-01 to 2018-12
+test:       2019-01 to 2019-12
+```
+
+Post-2019 Yelp records may exist in the raw dataset snapshot, but they are not part of the final model evaluation or tracked model figures.
 
 
 ## Repository Structure
@@ -30,7 +42,7 @@ data/
   processed/      modeling-ready data, ignored by Git
 docs/             project notes, including leakage-control decisions
 notebooks/        reproducible academic workflow
-outputs/          report metrics, predictions, figures, and interpretation tables
+outputs/          tracked summary metrics, figures, and interpretation tables
 ```
 
 ## Data
@@ -46,6 +58,8 @@ yelp_academic_dataset_tip.json
 ```
 
 Raw, interim, and processed data are not committed because of size. Report-ready outputs under `outputs/` are committed so the figures and summary tables can be reviewed without rerunning the full workflow.
+
+The Yelp Open Dataset is governed by Yelp's dataset terms. This repository does not redistribute the raw Yelp JSON files.
 
 ## Notebook Workflow
 
@@ -97,6 +111,8 @@ outputs/attention_pulse_predictions.csv
 ```
 
 They are intentionally ignored by Git because they are large and can be recreated from the notebooks.
+
+The tracked model figures under `outputs/figures/models/` describe the 2019 pre-COVID holdout only.
 
 ## Reproducibility
 
