@@ -1,10 +1,10 @@
-# Community Forecasting with Yelp Data
+# Community Attention Forecasting with Yelp Dataset
 
-Forecast short-term shifts in local business attention using Yelp review history, reviewer-network exposure, business category signals, and lightweight review-language features.
+Forecast short-term shifts in business attention using Yelp Dataset's review history, reviewer-network exposure, business category signals, and review-language features.
 
-This started as a data-science capstone. It has been reworked into a cleaner MLE/SWE portfolio repo: reusable Python modules, CLI checks, synthetic tests, CI, leakage guardrails, and documented reproducibility limits.
+This started as a data-science capstone. It has been reworked into a cleaner MLE/SWE repo: reusable Python modules, CLI checks, synthetic tests, CI, leakage guardrails, and limits.
 
-## Project Pitch
+## Problem
 
 **Question:** can we predict which New Orleans businesses will receive unusually high review activity next month?
 
@@ -37,9 +37,8 @@ Tracked report artifacts under `outputs/` summarize the latest completed New Orl
 | Best pulse PR-AUC | 0.237 |
 | Best top-10% pulse precision | 0.293 |
 
-Interpretation: strong temporal baselines are hard to beat for raw review counts, but all-modality ML is useful for attention-pulse detection and top-k ranking. That is the honest interview story: the project does not overclaim, and it treats baselines as serious competitors.
-
-## Engineering Highlights
+Interpretation: strong temporal baselines are hard to beat for raw review counts, but all-modality ML is useful for attention-pulse detection and top-k ranking.
+## Highlights
 
 - `src/community_forecasting/` contains reusable package code for JSONL loading, chronological splits, metrics, TF-IDF helpers, output validation, and leakage checks.
 - `cf-yelp` exposes portfolio-friendly commands:
@@ -50,7 +49,6 @@ Interpretation: strong temporal baselines are hard to beat for raw review counts
 - `tests/` uses synthetic fixtures only, so CI does not need Yelp raw data.
 - `.github/workflows/ci.yml` runs linting, formatting checks, tests, output validation, and leakage checks.
 - Notebook leakage fixes now exclude Yelp snapshot rating/review-count fields from model features, fit TF-IDF vocabulary on train-window text only, and select the active cohort from train-window activity.
-- ECC-style workflow was used for the rework: planner sidecar, TDD sidecar, review/security passes, and verification commands.
 
 ## Repository Structure
 
@@ -122,13 +120,5 @@ The Yelp Open Dataset is governed by Yelp's dataset terms. This repo does not re
 ```
 
 The notebooks remain the readable research narrative. The package now owns reusable helpers and CI-safe checks.
-
-## Interview Talking Points
-
-- I used chronological validation because random splits would leak future demand patterns.
-- I found and fixed leakage risks in social-network, snapshot metadata, cohort selection, and TF-IDF vocabulary construction.
-- I treated baselines as first-class models and reported where ML did not win.
-- I separated heavyweight data reproduction from lightweight CI by using synthetic fixtures and committed summary artifacts.
-- I built a small CLI so the project can be inspected like software, not only like notebooks.
 
 See [docs/model_card.md](docs/model_card.md), [docs/data_card.md](docs/data_card.md), and [docs/reproducibility.md](docs/reproducibility.md) for more detail.
