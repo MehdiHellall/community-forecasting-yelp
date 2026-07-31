@@ -29,13 +29,3 @@ cf-yelp execute-notebooks --smoke
 ```
 
 These commands are intentionally lightweight so they can run in CI without raw Yelp data.
-
-## ECC Workflow
-
-The implementation follows the ECC approach where it is useful without adding process overhead:
-
-- `planner`: scoped the implementation toward a pragmatic MLE/SWE repo.
-- `tdd-guide`: shaped synthetic tests before verification.
-- `code-reviewer`: review pass after implementation.
-- `security-reviewer`: publishing and data/privacy review.
-- `verification-loop`: final lint/test/CLI checks.
