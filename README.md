@@ -1,65 +1,113 @@
 # Community Forecasting with Yelp Data
 
-This project studies **pre-COVID local community attention dynamics** on Yelp. It combines time-series review history, business metadata, social-network exposure, and lightweight NLP features to forecast which New Orleans businesses will receive future review activity or short-term attention pulses.
+Forecast short-term shifts in local business attention using Yelp review history, reviewer-network exposure, business category signals, and lightweight review-language features.
 
-Research question:
+This started as a data-science capstone. It has been reworked into a cleaner MLE/SWE portfolio repo: reusable Python modules, CLI checks, synthetic tests, CI, leakage guardrails, and documented reproducibility limits.
 
-> Can time-series history, social-network exposure, and review-language signals help forecast short-term shifts in community attention toward local Yelp businesses?
+## Project Pitch
 
-## Current Status
+**Question:** can we predict which New Orleans businesses will receive unusually high review activity next month?
 
-The notebook pipeline has been run end to end for **New Orleans, Louisiana**.
+The project builds a pre-COVID business-month dataset and evaluates two tasks:
 
-- Extracted **6,215 businesses**, **635,521 reviews**, and **245,421 reviewing users**.
-- Built a train-window weighted active-reviewer friendship graph using **2015-02 through 2017-12** reviews, with **8,351 nodes** and **23,563 edges**.
-- Created a pre-COVID modeling table with **715 active businesses** and **40,822 business-month rows**, using a target window that ends at **2019-12**.
-- Added two prediction tasks:
-  - next-month review-count regression;
-  - attention-pulse classification for unusually high next-month activity.
-- Compared simple baselines, Random Forests, HistGradientBoosting, Poisson/logistic models, selected-feature variants, and pulse probability diagnostics.
-- Added validation-tuned attention-pulse thresholds and top-k pulse retrieval metrics.
-- Added capped TF-IDF topic indicators, pulse-predecessor analysis, and report-ready attention-pulse case studies.
+| Task | Target | Why it matters |
+| --- | --- | --- |
+| Review-count regression | next-month review count | Tests whether local attention volume is forecastable. |
+| Attention-pulse classification | unusually high next-month activity | More useful for ranking businesses likely to spike. |
 
-## Final Evaluation Scope
+The final academic scope is pre-COVID only:
 
-The final academic claims are intentionally **pre-COVID only**. The forecasting split is:
+| Split | Target months |
+| --- | --- |
+| Train | 2015-02 to 2017-12 |
+| Validation | 2018-01 to 2018-12 |
+| Test | 2019-01 to 2019-12 |
 
-```text
-train:      2015-02 to 2017-12
-validation: 2018-01 to 2018-12
-test:       2019-01 to 2019-12
-```
+## Current Results
 
-Post-2019 Yelp records may exist in the raw dataset snapshot, but they are not part of the final model evaluation or tracked model figures.
+Tracked report artifacts under `outputs/` summarize the latest completed New Orleans run:
 
+| Result | Value |
+| --- | --- |
+| Best review-count model | Baseline: rolling 3-month avg |
+| Best count WAPE | 0.376 |
+| Last-month baseline WAPE | 0.431 |
+| Best pulse model | ML: HGB all modalities |
+| Best pulse F1 | 0.287 |
+| Best pulse PR-AUC | 0.237 |
+| Best top-10% pulse precision | 0.293 |
+
+Interpretation: strong temporal baselines are hard to beat for raw review counts, but all-modality ML is useful for attention-pulse detection and top-k ranking. That is the honest interview story: the project does not overclaim, and it treats baselines as serious competitors.
+
+## Engineering Highlights
+
+- `src/community_forecasting/` contains reusable package code for JSONL loading, chronological splits, metrics, TF-IDF helpers, output validation, and leakage checks.
+- `cf-yelp` exposes portfolio-friendly commands:
+  - `cf-yelp summarize-results`
+  - `cf-yelp validate-outputs`
+  - `cf-yelp leakage-check`
+  - `cf-yelp execute-notebooks --smoke`
+- `tests/` uses synthetic fixtures only, so CI does not need Yelp raw data.
+- `.github/workflows/ci.yml` runs linting, formatting checks, tests, output validation, and leakage checks.
+- Notebook leakage fixes now exclude Yelp snapshot rating/review-count fields from model features, fit TF-IDF vocabulary on train-window text only, and select the active cohort from train-window activity.
+- ECC-style workflow was used for the rework: planner sidecar, TDD sidecar, review/security passes, and verification commands.
 
 ## Repository Structure
 
 ```text
-data/
-  raw/yelp/       original Yelp JSON files, ignored by Git
-  interim/        city-level extracted data, ignored by Git
-  processed/      modeling-ready data, ignored by Git
-docs/             project notes, including leakage-control decisions
-notebooks/        reproducible academic workflow
-outputs/          tracked summary metrics, figures, and interpretation tables
+src/community_forecasting/   importable package and CLI
+tests/                       synthetic unit and integration tests
+notebooks/                   narrative research workflow
+outputs/                     tracked summary CSVs and figures
+docs/                        data, model, and reproducibility docs
+data/                        local Yelp data placeholders; raw data ignored
 ```
+
+Raw, interim, and processed Yelp files are intentionally not committed. The repository tracks summary CSVs and figures that are safe to inspect without redistributing Yelp source records.
+
+## Quickstart
+
+Recommended:
+
+```bash
+uv sync --extra dev
+uv run pytest
+uv run cf-yelp summarize-results
+uv run cf-yelp validate-outputs
+uv run cf-yelp leakage-check
+uv run cf-yelp execute-notebooks --smoke
+```
+
+For the full notebook environment, include the notebook extra:
+
+```bash
+uv sync --extra dev --extra notebooks
+```
+
+Pip fallback:
+
+```bash
+python -m pip install -e ".[dev]"
+pytest
+cf-yelp summarize-results
+```
+
+The full notebook pipeline requires notebook extras plus the Yelp Open Dataset JSON files in `data/raw/yelp/`. CI deliberately avoids those dependencies.
 
 ## Data
 
-Place the Yelp Open Dataset files in `data/raw/yelp/`:
+Place Yelp Open Dataset files here when reproducing locally:
 
 ```text
-yelp_academic_dataset_business.json
-yelp_academic_dataset_user.json
-yelp_academic_dataset_review.json
-yelp_academic_dataset_checkin.json
-yelp_academic_dataset_tip.json
+data/raw/yelp/
+  yelp_academic_dataset_business.json
+  yelp_academic_dataset_user.json
+  yelp_academic_dataset_review.json
+  yelp_academic_dataset_checkin.json
+  yelp_academic_dataset_tip.json
 ```
 
-Raw, interim, and processed data are not committed because of size. Report-ready outputs under `outputs/` are committed so the figures and summary tables can be reviewed without rerunning the full workflow.
-
-The Yelp Open Dataset is governed by Yelp's dataset terms. This repository does not redistribute the raw Yelp JSON files.
+The Yelp Open Dataset is governed by Yelp's dataset terms. This repo does not redistribute raw Yelp JSON, interim extracts, processed tables, or full prediction files.
 
 ## Notebook Workflow
 
@@ -73,73 +121,14 @@ The Yelp Open Dataset is governed by Yelp's dataset terms. This repository does 
 07_results_interpretation.ipynb
 ```
 
-The notebooks move from scope selection and extraction to EDA, SNA design, feature engineering, modeling, and final interpretation. The SNA leakage guard is documented in `docs/sna_training_window.md`.
+The notebooks remain the readable research narrative. The package now owns reusable helpers and CI-safe checks.
 
-## Generated Outputs
+## Interview Talking Points
 
-The current local run creates:
+- I used chronological validation because random splits would leak future demand patterns.
+- I found and fixed leakage risks in social-network, snapshot metadata, cohort selection, and TF-IDF vocabulary construction.
+- I treated baselines as first-class models and reported where ML did not win.
+- I separated heavyweight data reproduction from lightweight CI by using synthetic fixtures and committed summary artifacts.
+- I built a small CLI so the project can be inspected like software, not only like notebooks.
 
-```text
-data/interim/new_orleans/
-data/processed/new_orleans/
-outputs/city_business_counts.csv
-outputs/forecasting_metrics.csv
-outputs/attention_pulse_metrics.csv
-outputs/attention_pulse_topk_metrics.csv
-outputs/attention_pulse_calibration.csv
-outputs/model_comparison_summary.csv
-outputs/nlp_tfidf_terms.csv
-outputs/pulse_predecessor_analysis.csv
-outputs/attention_pulse_case_studies.csv
-outputs/figures/
-```
-
-The figure folders are organized by pipeline stage:
-
-```text
-outputs/figures/eda/
-outputs/figures/sna/
-outputs/figures/feature_engineering/
-outputs/figures/models/
-```
-
-Full prediction files are regenerated locally by notebook `06`:
-
-```text
-outputs/forecasting_predictions.csv
-outputs/attention_pulse_predictions.csv
-```
-
-They are intentionally ignored by Git because they are large and can be recreated from the notebooks.
-
-The tracked model figures under `outputs/figures/models/` describe the 2019 pre-COVID holdout only.
-
-## Reproducibility
-
-Run the notebooks in this exact order:
-
-```text
-01_dataset_overview_and_city_selection.ipynb
-02_new_orleans_data_preparation.ipynb
-03_exploratory_analysis.ipynb
-04_social_network_analysis.ipynb
-05_time_series_feature_engineering.ipynb
-06_forecasting_models.ipynb
-07_results_interpretation.ipynb
-```
-
-Expected tracked outputs after a full run:
-
-- metrics and summary tables in `outputs/*.csv`;
-- figures in `outputs/figures/eda/`, `outputs/figures/sna/`, `outputs/figures/feature_engineering/`, and `outputs/figures/models/`;
-- modeling-ready data in `data/processed/new_orleans/`, regenerated locally but ignored by Git.
-
-The full prediction CSVs are local regeneration artifacts and are not committed.
-
-## Environment
-
-Install the Python dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
+See [docs/model_card.md](docs/model_card.md), [docs/data_card.md](docs/data_card.md), and [docs/reproducibility.md](docs/reproducibility.md) for more detail.

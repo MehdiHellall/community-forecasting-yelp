@@ -7,6 +7,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+*.egg-info/
 
 # Virtual environments
 .venv/
@@ -38,6 +39,10 @@ outputs/*
 outputs/*_predictions.csv
 !outputs/figures/
 !outputs/figures/**
+
+# Local academic exports
+/final_project_submission.pdf
+/forecasting-community-attention-yelp.pdf
 
 # OS/editor files
 .DS_Store

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "community-forecasting-yelp"
+version = "0.1.0"
+description = "Leakage-aware Yelp community-attention forecasting portfolio project."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0,<4",
+    "numpy>=2.4,<3",
+    "scikit-learn>=1.8,<2",
+    "nbclient>=0.10,<1",
+    "nbformat>=5.10,<6",
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "networkx>=3.6,<4",
+    "python-louvain>=0.16,<0.17",
+    "matplotlib>=3.10,<4",
+    "nbclient>=0.10,<1",
+    "nbformat>=5.10,<6",
+    "pyarrow>=24,<25",
+    "vaderSentiment>=3.3.2,<4",
+    "prophet>=1.3,<2",
+]
+dev = [
+    "pytest>=9.0,<10",
+    "pytest-cov>=7.0,<8",
+    "ruff>=0.14,<1",
+    "pre-commit>=4.3,<5",
+]
+
+[project.scripts]
+cf-yelp = "community_forecasting.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP", "RUF"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=community_forecasting --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["community_forecasting"]
