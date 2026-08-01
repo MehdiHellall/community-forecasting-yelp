@@ -4,9 +4,7 @@ Forecast short-term shifts in business attention using Yelp Dataset's review his
 
 This started as a data-science capstone. It has been reworked into a cleaner MLE/SWE repo: reusable Python modules, CLI checks, synthetic tests, CI, leakage guardrails, and limits.
 
-## Results at a Glance
-
-Latest leakage-safe New Orleans run, using the 2019 pre-COVID holdout:
+## Results
 
 ![Full-cohort review-count WAPE comparison](outputs/figures/models/review_count_wape_comparison_normal_pre_covid_test.png)
 
