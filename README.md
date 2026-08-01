@@ -4,6 +4,21 @@ Forecast short-term shifts in business attention using Yelp Dataset's review his
 
 This started as a data-science capstone. It has been reworked into a cleaner MLE/SWE repo: reusable Python modules, CLI checks, synthetic tests, CI, leakage guardrails, and limits.
 
+## Results at a Glance
+
+Latest leakage-safe New Orleans run, using the 2019 pre-COVID holdout:
+
+![Full-cohort review-count WAPE comparison](outputs/figures/models/review_count_wape_comparison_normal_pre_covid_test.png)
+
+| Question | Best result | What it means |
+| --- | --- | --- |
+| Which model best forecasts full-cohort review counts? | Rolling 3-month baseline, WAPE **0.376** | The best simple temporal baseline beat the full-cohort ML regressors. |
+| How much better is that than last-month naive? | **12.8% lower WAPE** than the last-month baseline, 0.431 -> 0.376 | Recent rolling activity is a strong, hard-to-beat signal. |
+| Which model best classifies attention pulses? | HGB all modalities, F1 **0.287**, PR-AUC **0.237**, Brier **0.099** | ML adds value on the rarer spike-detection task. |
+| Which model best ranks likely pulses? | HGB selected top 20, precision@10% **0.293** | The top-risk decile contains pulses at **2.51x** the base pulse rate of 0.117. |
+
+Scope note: Prophet reaches WAPE **0.230** only on a separate 120-row top-10-business benchmark, not the 8,568-row full cohort. In the like-for-like top-10 comparison, rolling 3-month still leads at WAPE **0.162**.
+
 ## Problem
 
 **Question:** can we predict which New Orleans businesses will receive unusually high review activity next month?
@@ -23,21 +38,8 @@ The final academic scope is pre-COVID only:
 | Validation | 2018-01 to 2018-12 |
 | Test | 2019-01 to 2019-12 |
 
-## Current Results
-
-Tracked report artifacts under `outputs/` summarize the latest completed New Orleans run:
-
-| Result | Value |
-| --- | --- |
-| Best review-count model | Baseline: rolling 3-month avg |
-| Best count WAPE | 0.376 |
-| Last-month baseline WAPE | 0.431 |
-| Best pulse model | ML: HGB all modalities |
-| Best pulse F1 | 0.287 |
-| Best pulse PR-AUC | 0.237 |
-| Best top-10% pulse precision | 0.293 |
-
 Interpretation: strong temporal baselines are hard to beat for raw review counts, but all-modality ML is useful for attention-pulse detection and top-k ranking.
+
 ## Highlights
 
 - `src/community_forecasting/` contains reusable package code for JSONL loading, chronological splits, metrics, TF-IDF helpers, output validation, and leakage checks.
